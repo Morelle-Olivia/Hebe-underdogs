@@ -1,6 +1,6 @@
 # Hebe Goal App 
 
-A Goal App built by the Team
+A Goal App built by Team Hebe-Underdogs
 
 ### Version: 1.1.0
 
@@ -17,6 +17,9 @@ $ npm run dev
 
 # Visit http://localhost:5000
 ```
+
+### Live Version
+[Live Here](https://hebe-goal-tracker-app.herokuapp.com/)
 
 ### MongoDB
 
