@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="Create-goal.css">
+	<title>Create-Goal</title>
+</head>
+<body>
+	<!--here it's form of create goal(popup) --> 
+
+	<div id="popup"> 
+    <div id="popup_content">
+        <form method="POST" action="">
+            <table>
+                <tr id="head1">
+                    <th colspan="2">Add goal</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Name:<br><input type="text" name="text" id="input_N" required></td>
+                    <td  style="margin-left: 21px;">Due Date:<br><input type="date" name="date" id="input_D" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Description:<br><textarea required></textarea></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Priority:<br>
+                        <select id="select_1">
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                    </select></td>
+                    <td>Measure:<br>
+                        <select id="select_2">
+                            <option value="easy">Easy</option>
+                            <option value="possible">Possible</option>
+                            <option value="tough">Tough</option>
+                            <option value="impossible">Impossible</option>
+                        </select></td>
+                </tr>
+                <tr id="footer1">
+                    <td><input type="submit" name="save" value="Save" id="submit"></td>
+                    <td id="close_popup"><input type="submit" id="submit" name="cancel" value="Cancel"></td>
+                </tr>
+            </table>
+        </form>
+        
+    </div>
+    
+  </div>
+  <script type="text/javascript">
+    /*Script of Add Goal*/
+
+var popup = document.getElementById('popup');
+
+var show_popup = document.getElementById("show_popup"); //please edit here by adding the id of your button for create goal
+var close_popup = document.getElementById("close_popup");
+show_popup.onclick = function(){
+    popup.style.display = "block";
+}
+close_popup.onclick = function(){
+    popup.style.display = "none";
+}
+window.onclick = function(event){
+    if(event.target == popup){
+        popup.style.display = "none";
+    }
+}
+   
+  </script>
+
+</body>
+</html>
