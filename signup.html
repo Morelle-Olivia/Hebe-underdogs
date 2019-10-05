@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hebe-Sign Up</title>
 </head>
 <body>
@@ -12,6 +13,7 @@
     <a href="login.html">Login</a>
     <a href="signup.html">Sign Up</a>
     <a href="index.html">Home</a>
+    <a href="faq.html">FAQ</a>
 	</div>
 	</header>
 	<main class="login-main">
@@ -28,23 +30,23 @@
     <p class="register-sub-text">Sign up with your details to get started!</p>
     <form name="RegForm" action="success.html" onsubmit="return signUp()" method="post"> 
       <label for="first-name">
-        <input type="text" name="first-name" id="first-name" placeholder="First Name">
+        <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
       </label>
 
       <label for="last-name">
-        <input type="text" name="last-name" id="last-name" placeholder="Last Name">
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
       </label>
 
       <label for="email">
-        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="email" name="email" id="email" placeholder="Email" required>
       </label>
 
       <label for="password">
-        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="password" name="password" id="password" placeholder="Password" required>
       </label>
 
       <label for="confirm-password">
-        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password">
+        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
       </label>
       <p class="login-link"><a href="login.html">Existing member?</a></p>
       <button type="submit" class="register-btn">Register</button>
