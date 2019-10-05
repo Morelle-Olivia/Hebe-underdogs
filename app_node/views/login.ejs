@@ -1,0 +1,30 @@
+
+
+<main class="login-main">
+ <div class="signup_area">
+    <h1 class="welcome-head-text">Welcome to Hebe</h1>
+    <p class="welcome-sub-text">...Best Goal Tracker Tool</p>
+    <img class="design-image" src="code.png">
+</div>
+<div class="signup-form">
+    <h2 class="register-head-text">Login</h2>
+    <p class="register-sub-text">Sign in with your Email and Password</p>
+    <% include ./partials/messages %>
+    <form name="RegForm" action="/login" method="POST"> 
+      <label for="email">
+        <input type="email" name="email" id="email" placeholder="Email" required>
+      </label>
+
+      <label for="password">
+        <input type="password" name="password" id="password" placeholder="Password" required>
+      </label>
+      <p class="login-link"><a href="/forgot">Forgot Password?</a></p>
+      <button type="submit" class="register-btn">Verify</button>
+    </form>
+
+      <p>Don't have an account? <a href="/register" style="color:green">Register</a></p>
+
+</div>
+</div>
+</main>
+
