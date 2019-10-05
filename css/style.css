@@ -17,7 +17,8 @@ body {
 	justify-content: space-between;
 	border-bottom: 1px solid black;
 	background-color: #ffffffe6;
-	margin-bottom: 8rem;
+/* added button margin to header */
+	margin-bottom: 7rem;
 }
 .home-header a {
 	text-decoration: none;
@@ -31,8 +32,8 @@ body {
 }
 .nav-links {
 padding-top: 30px;
-	width: 50%;
-	margin-right: 10px;
+/* 	removed width and increased margin right */
+	margin-right: 30px;
 }
 .home-header img {
 	 width: 100%;
@@ -100,7 +101,8 @@ padding-top: 30px;
 		height:auto;
 		justify-content: space-around;
 			padding-top: 30px;
-			width: 50%;
+/* 	Increased width */
+			width: 75%;
 	}
 .home-header a {
 	text-decoration: none;
